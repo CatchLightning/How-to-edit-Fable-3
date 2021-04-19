@@ -1,0 +1,24 @@
+In order to make your own changes additional details
+
+
+0. Follow instructions in pt 1 up to part 10
+
+1. Open Fable3WeaponModification.ods with LibreOffice or OpenOffice
+2. Select your desired to edit weapon in row 3 of the ods with the dropdown
+3. select the hex value from column B adjacent to your relevant condition
+4. put this hex value into the GDBEditor after a # sign
+5a. Follow instructions from 11. in pt 1 to make simple changes
+6a. Now save before changing pages or it won't take and follow the instructions from 12 in pt 1
+
+OR
+
+5b. To make complete changes go to the parent subfolder under where you have opened and it will have a hex value directly under it this is a value you will need to replace
+	5b. ex. for instance replace this value with 12D46780 to change the requirement to spend gold [the value is determined by the value from step 4; follow 4's instructions to change how much gold for instance]
+
+6. To replace the requirement with something else find your desired challenge from column K under whatever condition you wish to copy from another weapon [the value is determined by the value from 4. follow 4's instructions to make whataver change you may need to be]
+
+6b. Now save before changing pages or it won't take and follow the instructions from 12 in pt 1
+
+In other words for 5b-6b
+In order to swap augment you must go to the relevant condition and swap both its result tags as well as the augment value (in the blue row) and its parent (in the row immediately below said blue row).
+

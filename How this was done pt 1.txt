@@ -1,0 +1,32 @@
+Note:  I have chosen to copy the below exactly as is (for posterity) from a forum. All credit goes to the original poster by username RyanBurnsRed posted March of 2018 on Fable3mod.net specifically at http://fable3mod.net/forums/index.php?t=msg&goto=788&
+Second Note: be aware his original images do not work at time I upload this in March 9th, 2021. I have not provided replacements becuase I'm not fully sure what he's talking about.
+
+
+
+There is a lot of information here, but a lot of it is not noob friendly and requires you to do a lot of research with a bit of trial and error.
+
+With that said, I think I've figured out how to use this spreadsheet. You're going to need two programs: BlackDemon's BNK tool found here and Keshire's GDBEditor found here
+
+I'll write this with the assumption that you have both Understone and Traitor's Keep DLC, and that you're a complete newbie to this like I am.
+
+I'm also assuming you are using Catspaw's xlive and your DLC folder is structured like this. If you're confused then check squark's post here, then the previous link should make a bit more sense.
+
+The weapon I modified was The Inquisitor sword.
+
+1. Open BnkBrowser.exe, then press Open and navigate to Fable 3 > DLC > 02_TraitorsKeep > Content and open dlc2free.bnk <-- make a backup of this file first!!!
+2. Press Extract all and create a new folder on your desktop. You can name it if you want but I just kept it as New Folder. Press OK and wait till it's done.
+3. Once that's done, close BnkBrowser and open the new folder, then open the globals folder.
+4. Copy GDBEditor into the globals folder.
+5. Open GDBEditor.exe from inside the globals folder. If my assumptions are true and you have everything right so far, you should see this
+6. Check the Extrapolate parent/child box and the globals.gdb box. Now you'll need to have the spreadsheet from the OP downloaded and opened.
+7. Find the weapon you want to raise/lower the requirements for. As I said I'm going to choose The Inquisitor sword.
+8. Scroll down until you find this section. This screenshot shows the whole page for a better idea of where it is.
+9. The values you're interested in are the last 3: #Condition (1), (2), (3). First, type a # in the search bar in GDBEditor, then copy the value for one of the conditions of your choosing into the search bar and press Search. I'm going to choose the third condition, which requires me to kill 150 villagers or soldiers.
+10. NOW OPEN PT 2 AND READ IT
+11. Expand globals.gdb until you find the condition in question you want to change. Make sure it matches up with the spreadsheet. For example, scroll down on the spreadsheet until you get to condition 3. You should see NumberToKill: 150. This is what you want to look for in GDBEditor. So look for NumberToKill, expand it, and you should see 150.
+12. Triple click on the number and type the number you want. I wanted to lower this requirement so I put in 1. I'll now have to kill just one villager or soldier to upgrade the sword. Do this for each condition you want and press Save Changes at the top right each time. Once you're done close the editor.
+13. Go back to your globals folder that you have on your desktop and delete GDBEditor.exe
+14. Open BnkCreator.exe and press the Add folder(s) button. Click on the folder you created on your desktop (mine is still called new folder) and press OK. Then you want to press the Create button.
+15. It'll ask you where to save the new archive. Navigate back to the folder in step 1 and overwrite it.
+
+Now you're done. Load up your game and test it out. Hope someone else will find this helpful!
